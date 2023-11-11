@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="102dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/sis" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Citas en Línea"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitulo"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre del paciente"/>
+
+    <Button
+        android:id="@+id/btnSeleccionarHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombreUsuario"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Seleccionar Horario" />
+
+    <TextView
+        android:id="@+id/textViewHorarioSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSeleccionarHorario"
+        android:layout_marginTop="8dp"
+        android:text="Horario Seleccionado: "
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnConfirmarCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHorarioSeleccionado"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Confirmar Cita"/>
+
+</RelativeLayout>
